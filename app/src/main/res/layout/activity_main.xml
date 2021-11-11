@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quatroElementos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/os_quatro_elementos"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/titulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/elemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gua_fogo_terra_e_ar"
+        android:textAlignment="center"
+        android:layout_margin="18dp"
+        android:textSize="16sp"
+        android:textColor="@color/titulo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quatroElementos" />
+
+    <Button
+        android:id="@+id/botaoAr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="17dp"
+        android:backgroundTint="@color/ar"
+        android:text="@string/botaoAr"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/elemento" />
+
+    <Button
+        android:id="@+id/botaoAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/agua"
+        android:text="@string/botaoAgua"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@id/botaoFogo"
+        app:layout_constraintTop_toBottomOf="@id/elemento" />
+
+    <Button
+        android:id="@+id/botaoFogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/fogo"
+        android:text="@string/botaoFogo"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@id/botaoTerra"
+        app:layout_constraintTop_toBottomOf="@id/elemento" />
+
+    <Button
+        android:id="@+id/botaoTerra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/terra"
+        android:text="@string/botaoTerra"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@id/botaoAr"
+        app:layout_constraintTop_toBottomOf="@id/elemento" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/botaoAgua">
+        <TextView
+            android:id="@+id/elementodesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="elemento"
+            android:layout_margin="18dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

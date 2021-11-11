@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NatureElements</string>
+    <string name="botaoAr">Ar</string>
+    <string name="botaoTerra">Terra</string>
+    <string name="botaoFogo">Fogo</string>
+    <string name="botaoAgua">Agua</string>
+    <string name="os_quatro_elementos">OS QUATRO ELEMENTOS</string>
+    <string name="gua_fogo_terra_e_ar">Água, Fogo, Terra e Ar</string>
+</resources>
